@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Search Page</title>
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+{% endblock %}
+{% block body %}
+<h1 align="center">Flipkart Web Scrapper</h1>
+<form action="/review" align="center" method="POST">
+    <h>Enter Product Name: </h>
+    <input type="text" name="productName" id="product" >
+    <input type="submit"  value="search">
+
+</form>
+{% endblock %}
