@@ -67,7 +67,7 @@ def index():
 
             return render_template('result.html', reviews=reviews[0:(len(reviews) - 1)])
         except Exception as e:
-            return "error"
+            return render_template('error.html')
     else:
         return render_template('index.html')
 
